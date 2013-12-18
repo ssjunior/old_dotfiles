@@ -432,14 +432,14 @@ nmap <silent><Leader>ew :call ToggleWrap()<CR>
 
 " Ok, a vim for men, get off the cursor keys {{{
 
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+"nnoremap <up> <nop>
+"nnoremap <down> <nop>
+"nnoremap <left> <nop>
+"nnoremap <right> <nop>
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop>
 
 " }}}
 
@@ -922,11 +922,11 @@ nmap <silent><Leader>n :PymodeLint<CR>
 let g:pymode_breakpoint_bind = '<Leader>B'
 
 let g:pymode_lint = 1
-let g:pymode_lint_on_write = 0
-let g:pymode_lint_checkers = ['pylint', 'pep8', 'mccabe', 'pep257']
+let g:pymode_lint_on_write = 1
+let g:pymode_lint_checkers = ['pep8', 'mccabe', 'pep257']
 let g:pymode_lint_ignore = ''
 let g:pymode_virtualenv = 0
-let g:pymode_rope = 1
+let g:pymode_rope = 0
 
 let g:pymode_rope_completion = 0
 let g:pymode_rope_complete_on_dot = 1
